@@ -1,0 +1,9 @@
+[Unit]
+Description=camera
+
+[Service]
+Type=simple
+ExecStart=/home/chip/record.sh
+
+[Install]
+WantedBy=multi-user.target

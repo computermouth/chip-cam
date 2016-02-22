@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>C.H.I.P.s</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
+  </head>
+  <body>
+	<div class="container">
+
+		<div class="bs-docs-section">
+			<div class="page-header">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 id="buttons">CHIP-cam</h1>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="page-header">
+				<div class="well">
+					<div class="bs-component">
+						<h3>Videos</h3>
+						<p class="lead">&nbsp;&nbsp;&nbsp; are grouped per capture instance and listed newest to oldest.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
