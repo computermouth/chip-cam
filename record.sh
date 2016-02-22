@@ -53,6 +53,8 @@ then
 
 	for D in `find /var/www/html/videos -mindepth 1 -type d | tac`
 	do
+		echo "$(du -sh ${D} | awk '{print $1}')" > ${D}/SIZE
+		
 		echo "" >> /var/www/html/index.html
 		echo "					<div class=\"row\">" >> /var/www/html/index.html
 		echo "						<div class=\"col-lg-12\">" >> /var/www/html/index.html
@@ -110,6 +112,7 @@ while [ "${BATTSTATE}" == "Battery charge current = 0mA" ]
 do
 	echo "waiting"
 	BATTSTATE=`battery.sh | grep "Battery charge"`
+	sleep 10s
 done
 
 sync
